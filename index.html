@@ -1,262 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - Easy Tutorials</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/44ae659d52.js" crossorigin="anonymous"></script>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mahfooj Ahmad — B.Tech CSE (AI & ML) student and aspiring web developer seeking internship opportunities.">
+  <meta name="theme-color" content="#080d18">
+  <title>Mahfooj Ahmad | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/44ae659d52.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="image/logo.jpeg" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
+  <header class="site-header" id="home">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">MA<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link nav-contact">Contact me</a></li>
+        <li><button class="menu-close" id="menuClose" aria-label="Close navigation"><i class="fa-solid fa-xmark"></i></button></li>
+      </ul>
+    </nav>
+  </header>
 
-
-                <i class="fa-solid fa-bars" style="color: aliceblue;" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>UI/UX Desiner</p>
-                <h1>Hi I'm <span>Mahfooj</span><br> Ahmad, Basti from India.</h1>
-            </div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> OPEN TO INTERNSHIP OPPORTUNITIES</div>
+          <p class="hero-kicker">Hello, I'm</p>
+          <h1>Mahfooj <span>Ahmad</span></h1>
+          <h2>Web Developer <span class="divider">|</span> B.Tech CSE (AI &amp; ML)</h2>
+          <p class="hero-description">
+            I enjoy building practical web applications that solve real problems.
+            I’m currently looking for a web development internship where I can
+            contribute, learn from a team, and grow through real-world projects.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-outline" href="Resume.docx" download>Download resume <i class="fa-solid fa-download"></i></a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/mahfooj049" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:mahfooahmadkhan83@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <span>Kanpur, Uttar Pradesh, India</span>
+          </div>
         </div>
-    </div>
-    <!------------------- about    ---------->
-    <div id="about">
-        <div class="containers">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="image/user.jpeg
-                    ">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Ut nulla ea sapiente
-                        perspiciatis quis impedit! Beatae, suscipit
-                        expedita voluptas, reprehenderit ipsam eveniet
-                        saepe rerum dignissimos veritatis architecto
-                        modi error quo!</p>
-
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET
-                                Institute</li>
-                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
-                            <li><span>2017 - 2019</span><br>UI/UX Design Excutive at Coin
-                                Digital Ltd.</li>
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>UI?UX</span><br>Desigining Web/App interfases</li>
-                            <li><span>Web Dovelopment</span><br>Web app Dovelopment</li>
-                            <li><span>App Dovelopment</span><br>Building Android/iOS apps</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2024</span><br>schooling completed</li>
-                            <li><span>2025</span><br>prep jee</li>
-                            <li><span>2026</span><br>Btech</li>
-                        </ul>
-                    </div>
-
-                </div>
+        <div class="hero-visual" aria-label="Developer illustration">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="code-card">
+            <div class="code-card-top"><span></span><span></span><span></span><small>developer.js</small></div>
+            <div class="code-lines">
+              <p><b>01</b> <span class="code-purple">const</span> developer = {</p>
+              <p><b>02</b> &nbsp; name: <span class="code-green">'Mahfooj'</span>,</p>
+              <p><b>03</b> &nbsp; focus: <span class="code-green">'Web Development'</span>,</p>
+              <p><b>04</b> &nbsp; skills: [</p>
+              <p><b>05</b> &nbsp;&nbsp; <span class="code-green">'React.js'</span>,</p>
+              <p><b>06</b> &nbsp;&nbsp; <span class="code-green">'REST APIs'</span>,</p>
+              <p><b>07</b> &nbsp;&nbsp; <span class="code-green">'Postman'</span></p>
+              <p><b>08</b> &nbsp; ]</p>
+              <p><b>09</b> };</p>
+              <p><b>10</b> <span class="code-purple">const</span> goal = <span class="code-green">'Build &amp; learn'</span>;</p>
             </div>
+            <div class="code-card-footer"><span class="status-dot"></span> Always learning, always building</div>
+          </div>
+          <div class="floating-tag tag-react"><i class="fa-brands fa-react"></i> React.js</div>
+          <div class="floating-tag tag-api"><i class="fa-solid fa-code"></i> REST APIs</div>
         </div>
-    </div>
-    <!-- -----------------services---------------------->
+      </div>
+      <a href="#about" class="scroll-cue"><span></span> Scroll to explore</a>
+    </section>
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Adipisci, ipsum laudantium mollitia reiciendis libero debitis.
-                        Tempore blanditiis nostrum quia fugit explicabo, alias, non optio
-                        perspiciatis
-                        recusandae quisquam ad repudiandae ducimus!</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Adipisci, ipsum laudantium mollitia reiciendis libero debitis.
-                        Tempore blanditiis nostrum quia fugit explicabo, alias, non optio
-                        perspiciatis
-                        recusandae quisquam ad repudiandae ducimus!</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Adipisci, ipsum laudantium mollitia reiciendis libero debitis.
-                        Tempore blanditiis nostrum quia fugit explicabo, alias, non optio
-                        perspiciatis
-                        recusandae quisquam ad repudiandae ducimus!</p>
-                    <a href="#">Learn more</a>
-                </div>
-
-
-
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">A LITTLE ABOUT ME</p>
+          <h2>Building with curiosity.<br><span>Growing with every project.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-mark"><span>MA</span><small>Web Developer<br> &amp; Learner</small></div>
+          <div class="about-content">
+            <p class="lead">I’m a B.Tech Computer Science &amp; Engineering (AI &amp; ML) student at AITD, Kanpur.</p>
+            <p>
+              I’m interested in web application development and enjoy turning ideas
+              into useful digital products. Through projects such as NextBite and
+              the Civic Issue Reporting &amp; Resolution System, I have explored
+              practical workflows, dashboards, API-based features and location-aware
+              application experiences.
+            </p>
+            <p>
+              I’m now looking for an internship where I can strengthen my development
+              skills, collaborate with experienced developers and contribute to
+              meaningful products.
+            </p>
+            <div class="about-facts">
+              <div><strong>2025–2028</strong><span>B.Tech</span></div>
+              <div><strong>2</strong><span>Featured projects</span></div>
+              <div><strong>SIH</strong><span>Participant</span></div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- ------------------portfolio----------------- -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">WHAT I WORK WITH</p>
+          <h2>My <span>core skills</span></h2>
+          <p class="section-intro">The skills I’m currently focusing on and confident discussing in an internship interview.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+            <h3>React.js</h3>
+            <p>Building component-based user interfaces and working with reusable UI elements.</p>
+            <span class="skill-type">Frontend</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-plug"></i></div>
+            <h3>REST APIs</h3>
+            <p>Working with API endpoints to exchange data and connect application features.</p>
+            <span class="skill-type">API Development</span>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+            <h3>Postman</h3>
+            <p>Sending API requests and checking responses while testing application endpoints.</p>
+            <span class="skill-type">API Testing</span>
+          </article>
+        </div>
+        <p class="skills-note"><i class="fa-solid fa-circle-info"></i> Project descriptions below include the technologies and features documented in my resume.</p>
+      </div>
+    </section>
 
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="image/work-1.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it from play store.
-                        </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="image/work-2.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it from play store.
-                        </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="image/work-3.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it from play store.
-                        </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">SELECTED WORK</p>
+          <h2>Projects that turn ideas<br><span>into working solutions.</span></h2>
+          <p class="section-intro">A couple of practical applications I have worked on during my learning journey.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-category">FOOD REDISTRIBUTION</span><span class="project-status"><i class="fa-solid fa-circle"></i> Featured project</span></div>
+              <h3>NextBite</h3>
+              <p class="project-summary">AI-Powered Food Waste Reduction &amp; Redistribution Platform</p>
+              <p class="project-description">
+                A platform designed to connect institutional kitchens with NGOs so
+                surplus food can be requested, assigned and delivered through a
+                coordinated workflow.
+              </p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-check"></i> Role-based dashboards for kitchens, NGOs, delivery personnel and administrators.</li>
+                <li><i class="fa-solid fa-check"></i> Surplus food listings with NGO request and approval workflows.</li>
+                <li><i class="fa-solid fa-check"></i> Delivery assignment, status updates and location-based tracking.</li>
+              </ul>
+              <a class="project-link" href="https://github.com/mahfooj049/NextBite" target="_blank" rel="noopener noreferrer">View source code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-            <a href="#" class="btn">see more</a>
-        </div>
-    </div>
+            <div class="project-visual nextbite-visual"><div class="visual-icon"><i class="fa-solid fa-leaf"></i></div><span>Less waste.<br>More impact.</span><small>NEXTBITE</small></div>
+          </article>
 
-
-    <!-- --- contact--- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="" sub-title>Contact me </h1>
-                    <p><i class="fa-solid fa-paper-plane" id="logoi"></i> Mahfoozahmadkhan83@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>+916392447271</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="image/my-cv.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-
-                    <span id="msg"></span>
-                </div>
-
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <div class="project-topline"><span class="project-category">CIVIC TECHNOLOGY</span><span class="project-status"><i class="fa-solid fa-circle"></i> Featured project</span></div>
+              <h3>Civic Issue Reporting &amp; Resolution System</h3>
+              <p class="project-summary">A citizen-focused platform for reporting and tracking local issues</p>
+              <p class="project-description">
+                A web application that helps citizens report civic problems and
+                follow their progress, while staff and administrators manage
+                complaints through role-based access.
+              </p>
+              <ul class="feature-list">
+                <li><i class="fa-solid fa-check"></i> Complaint submission with image uploads and location details.</li>
+                <li><i class="fa-solid fa-check"></i> Interactive map to display reported issues.</li>
+                <li><i class="fa-solid fa-check"></i> Separate access and workflows for citizens, staff and administrators.</li>
+              </ul>
+              <a class="project-link" href="https://github.com/mahfooj049/civic-issue-system" target="_blank" rel="noopener noreferrer">View source code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
+            <div class="project-visual civic-visual"><div class="visual-icon"><i class="fa-solid fa-location-dot"></i></div><span>Report it.<br>Track it.<br>Resolve it.</span><small>CIVIC CONNECT</small></div>
+          </article>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright kevin . made with <i class="fa-solid fa-heart"></i>By Easy Tutorial</p>
-    </div>
+        <div class="github-cta">
+          <div><h3>Want to explore more?</h3><p>Visit my GitHub profile to see my code and ongoing learning.</p></div>
+          <a class="btn btn-outline" href="https://github.com/mahfooj049" target="_blank" rel="noopener noreferrer">Visit GitHub <i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </section>
 
-    <script>
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">MY JOURNEY</p>
+          <h2>Education &amp; <span>participation</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-date">2025 – 2028</div>
+            <div class="timeline-body"><h3>B.Tech — Computer Science &amp; Engineering (AI &amp; ML)</h3><p>AITD, Kanpur</p><span class="timeline-detail">Semester 1: 7.5 CGPA &nbsp;·&nbsp; Semester 2: 7.0 CGPA</span></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-body"><h3>Class XII</h3><p>RCCIC, Basti · UP Board</p><span class="timeline-detail">81%</span></div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-body"><h3>Class X</h3><p>LBSIC, Musha, Basti · UP Board</p><span class="timeline-detail">81%</span></div>
+          </article>
+        </div>
+        <div class="participation-card">
+          <div class="participation-icon"><i class="fa-solid fa-people-group"></i></div>
+          <div><span class="project-category">PARTICIPATION</span><h3>Smart India Hackathon (SIH)</h3><p>Participated in SIH at another college. Participation only; no certificate or award is claimed.</p></div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2>Have an internship<br>opportunity? <span>Let's talk.</span></h2>
+            <p>I’m open to web development internship opportunities, learning experiences and collaboration on meaningful projects.</p>
+            <a class="contact-detail" href="mailto:mahfooahmadkhan83@gmail.com"><i class="fa-solid fa-envelope"></i> mahfooahmadkhan83@gmail.com</a>
+            <a class="contact-detail" href="tel:+916392447271"><i class="fa-solid fa-phone"></i> +91 63924 47271</a>
+            <a class="contact-detail" href="https://github.com/mahfooj049" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> github.com/mahfooj049</a>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required>
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about the opportunity..." required></textarea>
+            <button class="btn btn-primary" type="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
+            <p class="form-note" id="formNote" role="status">This opens your email app with the message ready to send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxZQjJQ71GZDzFrXIH7UPeGN-lXSOAhAXljr14sOa_oZI-BzWWHmpX3fkgdeRIWOKJ16A/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-
-            const formData = new FormData(form)
-            const params = new URLSearchParams(formData).toString()
-
-            fetch(scriptURL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: params
-            })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully!"
-                    setTimeout(function () { msg.innerHTML = "" }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-    <!-- <script src="https://kit.fontawesome.com/44ae659d52.js" crossorigin="anonymous"></script> -->
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand" href="#home">MA<span>.</span></a><p>Designed &amp; built by Mahfooj Ahmad · © <span id="year"></span></p><a href="#home" class="back-top">Back to top ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
